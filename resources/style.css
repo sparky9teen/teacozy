@@ -5,6 +5,7 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  margin-top: 0;
 }
 
 header {
@@ -17,7 +18,6 @@ header {
   height: 69px;
   background-color: black;
   border-bottom: 1px solid seashell;
-  margin-top: 0;
 }
 
 .logo img {
@@ -25,14 +25,10 @@ header {
   padding-left: 10px;
 }
 
-nav {
-    display: inline-block;
-    text-align: right;
-}
-
 nav span {
-    display: inline-block;
-    padding: 20px 10px;
+  display: inline-block;
+  text-align: right;
+  padding: 20px 10px;
 }
 
 a {
@@ -43,38 +39,88 @@ a {
 
 .main {
   padding-top: 69px;
-  opacity: 0.9;
   width: 1200px;
   margin: auto;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.content {
-
+div {
+  display: block;
 }
 
 #mission {
+  display: flex;
+  align-items: center;
   height: 700px;
   padding-top: 70px;
   background-image: url(./images/img-mission-background.jpg);
 }
 
 #mission .content {
-    background-color: black;
-    width: 100%;
-    margin: auto;
+  background-color: black;
+  width: 100%;
 }
 
-.product img {
+#featuredtea {
+  height: 700px;
+  padding-top: 70px;
+}
+
+#featuredtea .products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#featuredtea .product img {
+  display: flex;
   width: 300px;
   height: 200px;
+  margin: 20px 10px;
+}
+
+#featuredtea .product span {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  padding: 4px;
+}
+
+#locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  padding-top: 70px;
+  background-image: url(./images/img-locations-background.jpg);
+}
+
+#locations .addresses {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+#locations .address {
+  width: 300px;
+  background-color: black;
+  margin: 0 20px;
+}
+
+h2 h3 h4 {
+  display: block;
+  margin: 0;
+  padding: 10px;
+}
+
+.info {
+
 }
 
 .copyright {
   text-align: left;
+  margin-left: 20px;
 }
