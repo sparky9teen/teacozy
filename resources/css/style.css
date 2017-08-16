@@ -42,37 +42,55 @@ a {
   margin: auto;
 }
 
-div {
-  display: block;
-}
-
 #mission {
   display: flex;
   align-items: center;
   height: 700px;
-  background-image: url(./images/img-mission-background.jpg);
+  background-image: url("./backgrounds/img-mission-background.jpg");
 }
 
-#mission .content {
+#mission .text {
+  width: 1200px;
   background-color: black;
-  width: 100%;
+}
+
+#mission h2 {
+  line-height: 1px;
+  padding-bottom: 10px;
+}
+
+#mission h4 {
+  line-height: 1px;
+  padding-top: 10px;
 }
 
 #featured {
   height: 700px;
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+
+#featured h2 {
+  line-height: 1px;
+  padding-bottom: 10px;
+}
+
+#featured h4 {
+  line-height: 1px;
+  padding-top: 10px;
 }
 
 #featured .products {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
 #featured .product img {
   width: 300px;
   height: 200px;
-  margin: 20px 10px;
+  padding: 20px 10px;
 }
 
 #featured .product span {
@@ -84,18 +102,17 @@ div {
 
 #locations {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 500px;
-  background-image: url(./images/img-locations-background.jpg);
+  width: 1200px;
+  height: 575px;
+  background-image: url("./backgrounds/img-locations-background.jpg");
 }
 
 #locations .addresses {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  display: flex;
+  padding-bottom: 90px;
 }
 
 #locations .address {
@@ -105,11 +122,13 @@ align-items: center;
   margin: 0 20px;
 }
 
-footer .content {
+footer {
   height: 200px;
 }
 
 .copyright {
+  height: 100px;
   text-align: left;
   margin-left: 20px;
+  padding-top: 25px;
 }
